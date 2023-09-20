@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Method or page not found</title>
+    </head>
+    <body>
+        <h2>Table of links</h2>
+        <table style="width: 100%; border-collapse: collapse; border: 2px solid;">
+            <thead><tr><td>No</td><td>Full</td><td>Short</td></tr></thead>
+            <tbody><?php foreach($links as $link):?>
+                <tr>
+                    <td><?=$link->id;?></td>
+                    <td><a href='<?=$link->full;?>'>Here</a></td>
+                    <td><a href='<?=$link->short;?>'>Here</a></td>
+                </tr>
+            <?php endforeach; ?></tbody>
+        </table>
+        <div><form method="POST">
+            <div><input name="link" value="" placeholder="Put URL here to add"></div>
+            <div><button type="submit">Add into base</button></div>
+        <div>
+            
+    </body>
+</html>
