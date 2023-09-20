@@ -1,0 +1,13 @@
+{
+    "name": "nskdmitry/cutlink",
+    "description": "Example of short-URL server",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nskdmitry\\Cutlink\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
